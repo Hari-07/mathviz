@@ -32,7 +32,8 @@ class _ScenePainter extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     final defaultPaint = Paint()
       ..color = Colors.white
-      ..style = PaintingStyle.stroke;
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 2;
 
     for (final shape in shapes) {
       shape.render(canvas, defaultPaint);
