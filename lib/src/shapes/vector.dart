@@ -34,8 +34,6 @@ class Vector extends MathShape {
       dest.dy - 10 * sin(angle + arrowAngle),
     );
 
-    path.relativeLineTo(1, 0);
-
     canvas.drawPath(path, paint);
   }
 }

@@ -7,7 +7,7 @@ class MathScene extends StatelessWidget {
 
   const MathScene({
     super.key,
-    this.shapes = const [],
+    required this.shapes,
   });
 
   Size get size => const Size(640, 480);
@@ -42,6 +42,7 @@ class _ScenePainter extends CustomPainter {
 
   @override
   bool shouldRepaint(covariant CustomPainter oldDelegate) {
-    return false;
+    // TODO: Optimise this by checking the params
+    return true;
   }
 }

@@ -6,8 +6,8 @@ void main() {
 }
 
 void run() async {
-  const scene = MathScene(
-    shapes: [
+  final scene = MathScene(
+    shapes: const [
       Circle(center: Offset(20, 20), radius: 10),
     ],
   );
